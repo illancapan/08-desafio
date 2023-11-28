@@ -1,0 +1,45 @@
+.main{
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas:    "nav nav nav nav"
+                            "aside section section section"
+                            "footer footer footer footer";
+}
+.nav{
+    background-color: blue;
+    grid-column-start: nav;
+    grid-column-end: nav;
+}
+.aside{
+    background-color: red;
+    grid-column-start: aside;
+    grid-column-end: aside;
+
+    display: flex;
+    flex-direction: column;
+
+}
+.section{
+    background-color: lightblue;
+    grid-column-start: section;
+    grid-column-end: section;
+}
+.footer{
+    background-color: orange;
+    grid-column-start: footer;
+    grid-column-end: footer;
+}
+.section__card{
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas:"card card card";
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
