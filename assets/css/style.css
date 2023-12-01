@@ -1,15 +1,17 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+
+  
 body{
     background-color: #dde5ff;
     font-family: 'Open Sans', sans-serif;
 }
 .main{
     display: grid;
-    padding:  0 20px;
+    padding:  0 1.25rem;
     height: 100vh;
-    grid-gap:20px;
-    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-gap:1.25rem;
+    grid-template-columns: 12.5rem 1fr 1fr 1fr;
     grid-template-areas:    "nav nav nav nav"
                             "aside section section section"
                             "footer footer footer footer";
@@ -17,7 +19,7 @@ body{
 }
 .nav{
     background-color: #7584ff;
-    height: 100px;
+    height: 6.25rem;
     grid-column-start: nav;
     grid-column-end: nav;
     display: flex;
@@ -26,15 +28,15 @@ body{
 }
 .nav__h1{
     color: #fff;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 700;
 }
 .aside{
     background-color: #dde5ff;
     color:#282689;
-    width: 200px;
-    border-right:1px solid #282689 ;
-    padding: 20px;
+    width: 12.5rem;
+    border-right:.0625rem solid #282689 ;
+    padding: 1.25rem;
     grid-column-start: aside;
     grid-column-end: aside;
 
@@ -48,6 +50,7 @@ body{
     grid-column-end: section;
 }
 .footer{
+    height: 6.25rem;
     background-color: #7584ff;
     grid-column-start: footer;
     grid-column-end: footer;
@@ -57,35 +60,54 @@ body{
 }
 .section__card{
     display: grid;
-    grid-gap:20px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap:1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
 
 }
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-color: #fff;
+    padding: 1.25rem;
     color: #282689;
+    border-radius: .625rem;
+    border: .0625rem solid #282689;
 }
 .card__img{
     width: auto;
-    height: 200px;
+    height: 12.5rem;
 }
-.aside__h2{
-    font-size: 20px;
+.card__h3{
+    margin: .625rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 20px;
+}
+.card__paragraph{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: .625rem;
 }
 .card__button{
-    background-color: #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
+    background-color: #dde5ff;
+    width: 100%;
+    padding: .625rem 1.25rem;
+    border-radius: .625rem;
 
 }
 .card__button:hover{
     background-color: #282689;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: .625rem 1.25rem;
+    border-radius: .625rem;
 
+}
+.aside__h2{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+.aside__ol--li{
+    padding: .625rem 0;
 }
