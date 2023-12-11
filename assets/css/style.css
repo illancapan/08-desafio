@@ -20,8 +20,7 @@ body{
 .nav{
     background-color: #7584ff;
     height: 6.25rem;
-    grid-column-start: nav;
-    grid-column-end: nav;
+grid-area: nav;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -37,8 +36,8 @@ body{
     width: 12.5rem;
     border-right:.0625rem solid #282689 ;
     padding: 1.25rem;
-    grid-column-start: aside;
-    grid-column-end: aside;
+    grid-area: aside;
+    
 
     display: flex;
     flex-direction: column;
@@ -46,14 +45,12 @@ body{
 }
 .section{
     background-color: #dde5ff;
-    grid-column-start: section;
-    grid-column-end: section;
+    grid-area: section;
 }
 .footer{
     height: 6.25rem;
     background-color: #7584ff;
-    grid-column-start: footer;
-    grid-column-end: footer;
+    grid-area: footer;
     display: flex;
     justify-content: center;
     align-items: center;
